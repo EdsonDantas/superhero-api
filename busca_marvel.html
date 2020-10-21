@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Edson_Dantas" content="Busca por herois consumindo a API superheroapi">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title>Busca Marvel Comics</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+
+            <div class="menu">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" title="Página inicial">Home</a></li>
+                        <li><a href="busca_geral.html" title="Página de Busca para todos os personagens"> Busca
+                                Geral</a></li>
+                        <li> <a href="busca_marvel.html" title="Página de busca para os personagens Marvel">Marvel</a>
+                        </li>
+                        <li> <a href="busca_dc.html" title="Página de busca para os personagens DC"> DC Comics</a></li>
+                        <li> <a href="Cidlove.html" title="Cidlove requires"> Cidlove</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--menu-->
+
+            <div class="header-flex">
+                <div class="header-flex1">
+                    <div class="titulo">
+                        <h1>Bem vindo(a)s à busca MARVEL. </h1>
+                        <h2> Aqui vc pode encontrar os personagens de filmes e HQs da Marvel.
+                        </h2>
+                    </div>
+                    <div class="sub-titulo">
+                        <h2 class="titulo">Consulte a Lista de personagens <a href="https://superheroapi.com/ids.html"
+                                target="blank"><button class="btn-lista">Aqui!</button></a>
+                        </h2>
+                    </div>
+                    <!--sub-titulo-->
+                </div>
+                <!--header flex 1-->
+
+                <div class="header-flex2">
+                    <div class="img-header-marvel">
+                        <img src="./image/Ironman-cartoon-png.png" alt="Imagem representando a Marvel e Dc"
+                            title="Poster Marvel e DC">
+                    </div>
+                    <!--img-header-->
+                </div>
+                <!--header flex2-->
+            </div>
+            <!--header flex-->
+
+        </header>
+
+        <section class="section busca">
+
+            <div class="logo-marvel-busca">
+                <img src="./image/marvel-logo.png" alt="Logo Marvel Original" title="Logo Marvel">
+            </div>
+            <!--logo-marvel-->
+
+            <div class="class-busca">
+                <input id="busca" type="text" placeholder="ex: Ironman, Spider-Man, Thor Girl, Hulk...">
+            </div>
+            <!--class-busca-->
+
+            <div class="class-buscar">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+            <!--class-buscar-->
+
+            <div class="logo-dc-busca">
+                <img src="./image/dc-comics-logo.png" alt="Logo De Comics Original" title="Logo Dc Comigs">
+            </div>
+            <!--logo-dc-->
+        </section>
+        <!--section busca-->
+
+        <section class="exibir-hero">
+
+            <div id="img" class="hero-img">
+                <!--o alt e o title estão inseridos com o JS-->
+                <img id="hero-imagem" class="hero-img-geral" src="">
+            </div>
+            <!--hero-img-->
+
+            <div id="info-row" class="row">
+                <ul id="info" class="lista-info">
+                    <li id="nome" class="lista"></li>
+                    <p>--------------------------</p>
+                    <li id="combate" class="lista"></li>
+                    <li id="durabilidade" class="lista"></li>
+                    <li id="inteligencia" class="lista"></li>
+                    <li id="poder" class="lista"></li>
+                    <li id="forca" class="lista"></li>
+                </ul>
+            </div>
+            <!--row-->
+
+            <div id="biography-row" class="biography-row">
+                <p id="titulo-bio" class="bio-geral"></p>
+                <p id="nome-bio" class="bio-geral"></p>
+                <hr>
+                <p id=aparicao-bio class="bio-geral"></p>
+                <hr>
+                <p id="aliados-bio" class="bio-geral"></p>
+                <hr>
+                <p id="local-bio" class="bio-geral"></p>
+                <hr>
+                <p id="conexoes-bio" class="bio-geral"></p>
+                <hr>
+                <p id="editora-bio" class="bio-geral"></p>
+            </div>
+            <!--biography-row-->
+
+            <!--Essa seção é toda gerada pelo JS. Aqui a vitrine toma forma.-->
+        </section>
+        <!--exibir-hero-->
+        <div class="infopedia-marvel">
+            <iframe
+                src="https://pt.wikipedia.org/wiki/Marvel_Comics#:~:text=A%20Marvel%20come%C3%A7ou%20em%201939,Steve%20Ditko%20e%20muitos%20outros."></iframe>
+        </div>
+        <footer>
+            <div class="link_superhero">
+                <p>Dados extraídos do site: <a href="https://superheroapi.com/index.html"> Super Hero API</a></p>
+                <p>Email contato: <em>dantasesrj@gmail.com</em></p>
+            </div>
+            <div class="icones">
+                <a href="https://github.com/EdsonDantas" title="link para meu git"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/edson.dantas9/" title="link para o meu instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/edson.dantas.9/" title="link para o meu cara de pau"><i
+                        class="fab fa-facebook"></i></a>
+            </div>
+        </footer>
+    </div>
+    <!--container-->
+
+    <script src="./js/marvel.js"></script>
+    <script src="https://kit.fontawesome.com/78915fd0bb.js" crossorigin="anonymous"></script>
+
+    <div class="clear"></div>
+</body>
+
+</html>

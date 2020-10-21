@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap');
+@font-face {
+    font-family: "DancingScript-Bold";
+    src: url("../font/static/DancingScript-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../image/background_3.png");
+    background-color: rgb(238, 230, 230);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    background-color: rgb(255, 255, 255);
+    max-width: 1024px;
+    height: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(13, 13, 14), rgb(34, 125, 243));
+}
+
+.menu nav {
+    padding: 10px;
+    width: 100%;
+    text-align: right;
+    background-image: linear-gradient(to right, rgb(13, 13, 14), rgb(68, 68, 65));
+}
+
+.menu nav li {
+    display: inline;
+    margin: 0 20px 0 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(248, 237, 236);
+}
+
+nav li a:hover {
+    color: rgb(0, 89, 255);
+    transition: .2s;
+}
+
+.header-flex {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.titulo {
+    color: white;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.titulo h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.titulo h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.img-header {
+    width: 100%;
+    margin: 0 30px 0;
+}
+
+.img-header img {
+    width: 100%;
+}
+
+/*Aqui começa o estilo do corpo principal da Home*/
+
+main {
+    margin-top: 10px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+;
+.logo-marvel {
+    width: 40%;
+}
+
+.logo-marvel img {
+    position: relative;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.img-center {
+    width: 40%;
+    position: relative;
+    right: 90px;
+}
+
+.img-center img {
+    width: 100%;
+}
+
+.logo-dc {
+    width: 30%;
+    position: relative;
+    right: 20px;
+}
+
+.logo-dc img {
+    background-size: 200px;
+    width: 100%;
+}
+
+.exibir-hero {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(34, 125, 243));
+}
+
+.titulo-exibicao {
+    text-align: center;
+}
+
+/*Exibição personagem home*/
+
+.titulo-exibicao h2 {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hero-img {
+    display: inline-block;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.hero-img img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: -20px -10px 15px;
+}
+
+.row {
+    display: inline-block;
+    /*background-color: wheat;
+    background-image: linear-gradient(rgb(233, 54, 54), yellow);*/
+    background-image: url("../image/old_paper.jpg");
+    vertical-align: top;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    border-radius: 10px;
+    box-shadow: -20px -10px 15px;
+}
+
+ul.lista-info {
+    display: inline-block;
+    width: 100%;
+}
+
+.lista {
+    width: 100%;
+    list-style: none;
+    font-family: "DancingScript-Bold";
+    font-size: 28px;
+    margin: 10px;
+}
+
+#nome {
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    color: black
+}
+
+/* Exibição da Biografia do personagem*/
+
+.biography-row {
+    /*background-image: url("../image/bio.jpg");*/
+    background-color: rgb(255, 230, 8);
+    width: 43.5%;
+    height: 100%;
+    display: inline-block;
+    margin: 23px 0 0 25px;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: -20px -10px 15px;
+}
+
+.bio-geral {
+    color: black;
+    font-style: italic;
+    font-size: 18px;
+    margin: 0 0 5px 5px;
+    line-height: 25px;
+}
+
+#titulo-bio {
+    text-align: center;
+    font-size: 22px;
+}
+
+span {
+    color: black;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(34, 125, 243);
+    text-align: center;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+em {
+    color: white;
+}
+
+.icones {
+    font-size: 20px;
+    z-index: 10;
+}
+
+.fa-github {
+    margin: 0 20px 0 0;
+}
+
+.fa-instagram {
+    margin: 0 20px 0 0;
+}
+
+/***********Estilo da página de BUSCA GERAL***************/
+
+/* imagem cabeçalho Home*/
+
+.img-header {
+    width: 280px;
+    margin: 0 30px 0;
+}
+
+.img-header img {
+    width: 100%;
+}
+
+/*Imagem cabeçalho Busca Geral*/
+
+.img-header-busca {
+    position: relative;
+    width: 70%;
+    left: 110px;
+    top: 40px;
+}
+
+.img-header-busca img {
+    width: 100%;
+}
+
+.sub-titulo {
+    margin-bottom: 30px;
+}
+
+/*Botão de busca para a lista de personagens. Acesso à página Hero api.*/
+
+.btn-lista {
+    width: 20%;
+    padding: 5px;
+    border: none;
+    background-color: yellow;
+    border-radius: 20px 5px 20px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-lista:hover {
+    background-color: red;
+    transition: .5s;
+}
+
+/*logos página de busca*/
+
+.logo-marvel-busca {
+    width: 14%;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+.logo-marvel-busca img {
+    display: inline-block;
+    min-width: 100px;
+    width: 100%;
+    border: none;
+}
+
+.logo-dc-busca {
+    position: relative;
+    display: inline-block;
+    width: 9%;
+    left: 300px;
+    top: 25px;
+}
+
+.logo-dc-busca img {
+    display: inline-block;
+    width: 100%;
+}
+
+/*Input e botão de busca*/
+
+.class-busca {
+    width: 37%;
+    position: relative;
+    display: inline-block;
+    bottom: 15px;
+    left: 150px;
+}
+
+.class-busca input {
+    position: relative;
+    width: 100%;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: rgb(22, 53, 78);
+    font-size: 16px;
+    font-weight: bold;
+    color: gray
+}
+
+.class-busca input:hover {
+    background-color: yellow;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.class-buscar {
+    display: inline-block;
+    position: relative;
+    bottom: 16px;
+    left: 160px;
+}
+
+.class-buscar button {
+    position: relative;
+    max-width: 160px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+    border: 1px blue solid;
+    border-radius: 20px 5px 20px 5px;
+}
+
+.class-buscar button:hover {
+    background-color: red;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#info-row {
+    display: none;
+}
+
+#biography-row {
+    display: none;
+}
+
+/*VITRINE*/
+
+.titulo-vitrine {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    border-bottom: crimson solid;
+    margin-bottom: 20px;
+}
+
+.vitrine {
+    position: relative;
+    left: 6px;
+    padding: 25px;
+    align-content: center;
+}
+
+.div-imagem {
+    display: inline-block;
+    width: 20%;
+}
+
+.img-item {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.5s;
+    border: 8px rgb(19, 18, 18) solid;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px;
+    color: rgb(90, 73, 73);
+}
+
+.img-item:hover {
+    transform: scale(1);
+}
+
+/*********Aqui começa a Busca Marvel************/
+
+.img-header-marvel {
+    width: 230px;
+    margin: 30px 30px 0;
+}
+
+.img-header-marvel img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.infopedia-marvel {
+    width: 100%;
+}
+
+/**************Aqui começa a Busca Dc Comics************/
+
+.img-header-dc {
+    width: 60%;
+    margin: 20px 0 0 40px;
+}
+
+.img-header-dc img {
+    width: 100%;
+}
+
+/**************Cid Questions*******************/
+
+.cid {
+    width: 100%;
+    padding: 20px;
+}
+
+.questoes {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.q1-4 {
+    font-weight: bold;
+}
+
+.q1-4 h2 {
+    color: black;
+    text-align: center;
+}
+
+.resposta {
+    font-weight: 500;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.div-cidvideo {
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+}
+
+.cidvideo {
+    width: 100%;
+    height: 400px;
+}
+
+.banda {
+    color: blue;
+}
+
+/*******************Formulário*****************/
+
+main .formulario-geral {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contato-form {
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+form {
+    padding: 20px;
+    width: 50%;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgb(92, 160, 250);
+    /*dando espaçamento entre top e bottom (primeiro paramentro 40px) e zero para os lados.*/
+}
+
+form label {
+    /*por padrao, as labels e inputs vem in line, para deixar um abaico do outro temos que usar o block*/
+    /*aumentamos o tamanho da fonte*/
+    font-size: 15px;
+    /*espaçamento para baixo entre os emelentos */
+    margin: 0 0 10px;
+}
+
+form legend {
+    font-size: 15px;
+    /*espaçamento para baixo entre os emelentos */
+    margin: 20px 0 20px;
+}
+
+.input-padrao {
+    border-radius: 10px;
+    display: block;
+    /*espaçamento para baixo entre os emelentos */
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 90%;
+}
+
+.enviar {
+    width: 30%;
+    padding: 14px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    /*uma pequena transição para mudar a cor paradrão, e tbm para a mudança no tamanho, para a definida no :hover*/
+    transition: 1s all;
+    /*agora vamos mudar o cursor para uma mãozinha sempre que passar por cima do botão*/
+    cursor: pointer;
+    margin-bottom: 20px 0 20px;
+}
+
+.enviar:hover {
+    background: darkorange;
+    /*elemento usado para aumentar o conteúdo de maneira proporcional. nesse caso o 1.2 equivale +- 20%*/
+    transform: scale(1.2);
+}
+
+.complemento {
+    padding: 10px;
+}
+
+.complemento h2 {
+    color: black;
+    text-align: center;
+}
+
+.complemento p {
+    font-style: italic;
+}
+
+/****************Reponsividade*******************/
+
+@media (max-width: 690px) {
+    #container {
+        width: 100%;
+    }
+    .menu nav {
+        text-align: left;
+    }
+    .img-header {
+        width: 80%;
+    }
+    .titulo h1 {
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 2%;
+    }
+    .titulo h2 {
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 2%;
+    }
+    h2 {
+        color: white;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 20px;
+        padding: 2%;
+    }
+    .logo-marvel {
+        width: 40%;
+    }
+    .logo-marvel img {
+        position: relative;
+        width: 100%;
+        margin-left: 40px;
+    }
+    .img-center {
+        display: none;
+    }
+    .logo-dc {
+        width: 30%;
+        position: relative;
+        left: 80px;
+    }
+    .hero-img {
+        display: inline-block;
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .hero-img img {
+        display: inline-block;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: -20px -10px 15px;
+    }
+    .exibir-hero {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .row {
+        display: inline-block;
+        /*background-color: wheat;
+        background-image: linear-gradient(rgb(233, 54, 54), yellow);*/
+        background-image: url("../image/old_paper.jpg");
+        vertical-align: top;
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: left;
+        font-style: italic;
+        border-radius: 10px;
+        box-shadow: -20px -10px 15px;
+    }
+    ul.lista-info {
+        display: inline-block;
+        width: 100%;
+    }
+    ul p {
+        display: none;
+        font-size: 10px;
+    }
+    .lista {
+        width: 100%;
+        list-style: none;
+        font-family: "DancingScript-Bold";
+        font-size: 17px;
+    }
+    #nome {
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-align: left;
+        color: black
+    }
+    .biography-row {
+        /*background-image: url("../image/bio.jpg");*/
+        background-color: rgb(255, 230, 8);
+        width: 80%;
+        display: inline-block;
+        margin: 23px 0 0 25px;
+        vertical-align: top;
+        border-radius: 10px;
+        box-shadow: -20px -10px 15px;
+    }
+    .bio-geral {
+        color: black;
+        font-style: italic;
+        font-size: 18px;
+        margin: 0 0 5px 5px;
+        line-height: 25px;
+    }
+    #titulo-bio {
+        text-align: center;
+        font-size: 18px;
+    }
+    /*Imagem header busca geral*/
+    .img-header-busca {
+        position: relative;
+        width: 60%;
+        left: 80px;
+        top: 40px;
+    }
+    .btn-lista {
+        width: 20%;
+        padding: 5px;
+        border: none;
+        background-color: yellow;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .logo-marvel-busca {
+        display: none;
+    }
+    .logo-dc-busca {
+        display: none;
+    }
+    .class-busca {
+        width: 67%;
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        left: 10px;
+    }
+    .class-busca input {
+        position: relative;
+        width: 100%;
+        padding: 9px;
+        border-radius: 10px;
+        background-color: rgb(22, 53, 78);
+        font-size: 16px;
+        font-weight: bold;
+        color: gray
+    }
+    .class-buscar {
+        display: inline-block;
+        position: relative;
+        top: 14px;
+        left: 30px;
+    }
+    .class-buscar button {
+        position: relative;
+        max-width: 160px;
+        padding: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        background-color: yellow;
+        border: 1px blue solid;
+        border-radius: 20px 5px 20px 5px;
+    }
+    /*vitrine*/
+    .titulo-vitrine {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        border-bottom: crimson solid;
+        margin-bottom: 20px;
+    }
+    /*busca marvel*/
+    .img-header-marvel {
+        position: relative;
+        left: 50px;
+        width: 50%;
+    }
+    /*frames*/
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+    /*cid love*/
+    .img-header {
+        width: 80%;
+        margin: 0 30px 0;
+    }
+    .enviar {
+        width: 55%;
+        padding: 14px 0;
+        background: orange;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        /*uma pequena transição para mudar a cor paradrão, e tbm para a mudança no tamanho, para a definida no :hover*/
+        transition: 1s all;
+        /*agora vamos mudar o cursor para uma mãozinha sempre que passar por cima do botão*/
+        cursor: pointer;
+        margin-bottom: 20px 0 20px;
+    }
+}
